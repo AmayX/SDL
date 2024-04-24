@@ -14,7 +14,9 @@ $result = $conn->query($sql);
 </head>
 <body>
     <h1>Welcome to our E-commerce Platform</h1>
-    
+
+    <a href="add_product.php">Add Product</a>
+
     <?php
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
