@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>File Size Calculator</title>
+<script>
+    function calculateFileSize(fileInput) {
+        var fileSize = fileInput.files[0].size; // Size in bytes
+        var fileSizeKB = fileSize / 1024; // Size in KB
+        var fileSizeMB = fileSizeKB / 1024; // Size in MB
+        var fileSizeGB = fileSizeMB / 1024; // Size in GB
+
+        // Display the results dynamically
+        document.getElementById('sizeInBytes').textContent = fileSize + ' bytes';
+        document.getElementById('sizeInKB').textContent = fileSizeKB.toFixed(2) + ' KB';
+        document.getElementById('sizeInMB').textContent = fileSizeMB.toFixed(2) + ' MB';
+        document.getElementById('sizeInGB').textContent = fileSizeGB.toFixed(2) + ' GB';
+    }
+</script>
+</head>
+<body>
+<h1>File Size Calculator</h1>
+<input type="file" id="fileInput" onchange="calculateFileSize(this)">
+<div id="fileSizeResults">
+    <p>Size in Bytes: <span id="sizeInBytes">0 bytes</span></p>
+    <p>Size in KB: <span id="sizeInKB">0 KB</span></p>
+    <p>Size in MB: <span id="sizeInMB">0 MB</span></p>
+    <p>Size in GB: <span id="sizeInGB">0 GB</span></p>
+</div>
+</body>
+</html>
