@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validation_xsd.xsd">
+    <event>
+        <event_id>1</event_id>
+        <event_name>ICPC</event_name>
+        <event_desc>5 coding questions in 2 hrs</event_desc>
+        <event_tags>
+            <tag id="1" displayName="coding">coding</tag>
+        </event_tags>
+        <event_type_participation>Team</event_type_participation>
+        <event_timing>
+            <event_start_datetime>2020-04-01T10:00:00</event_start_datetime>
+            <event_end_datetime>2020-04-01T12:00:00</event_end_datetime>
+        </event_timing>
+        <event_organizer_email>abc@gmail.com</event_organizer_email>
+        <event_organizer_phone>1234567890</event_organizer_phone>
+    </event>
+    <event>
+        <event_id>2</event_id>
+        <event_name>Painting</event_name>
+        <event_desc>Paint a self potrait in 2 hrs</event_desc>
+        <event_tags>
+            <tag id="1" displayName="painting">painting</tag>
+            <tag id="2" displayName="artist">artist</tag>
+        </event_tags>
+        <event_type_participation>Solo</event_type_participation>
+        <event_timing>
+            <event_start_datetime>2020-04-01T16:00:00</event_start_datetime>
+            <event_end_datetime>2020-04-01T18:00:00</event_end_datetime>
+        </event_timing>
+        <event_organizer_email>xyz@gmail.com</event_organizer_email>
+        <event_organizer_phone>9876543210</event_organizer_phone>
+    </event>
+</root>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<donation_website>
+    <header>
+        <title>HappyPaws Donation</title>
+        <styles>
+            <body_background_color>#f8f9fa</body_background_color>
+            <background_image>login_bg.jpg</background_image>
+            <text_color>#fff</text_color>
+            <donate_btn_color>#28a745</donate_btn_color>
+            <footer_background_color>#343a40</footer_background_color>
+            <footer_text_color>#fff</footer_text_color>
+        </styles>
+    </header>
+    <navigation>
+        <navbar>
+            <brand>HappyPaws Foundation</brand>
+            <links>
+                <link>
+                    <text>Home</text>
+                    <url>#</url>
+                </link>
+                <link>
+                    <text>Our Mission</text>
+                    <url>#mission</url>
+                </link>
+                <link>
+                    <text>Donate</text>
+                    <url>#donate</url>
+                </link>
+                <link>
+                    <text>Login</text>
+                    <url>C:\Users\parin\OneDrive\Desktop\HTML practices\login_sdl.html</url>
+                </link>
+                <link>
+                    <text>Contact</text>
+                    <url>#contact</url>
+                </link>
+            </links>
+        </navbar>
+    </navigation>
+    <content>
+        <jumbotron>
+            <heading>Help Us Care for Pets in Need</heading>
+            <subheading>Your donation makes a difference in the lives of rescued animals</subheading>
+            <button_text>Donate Now</button_text>
+        </jumbotron>
+        <mission_section id="mission">
+            <heading>Our Mission</heading>
+            <text>At HappyPaws Foundation, we are dedicated to providing temporary homes for pets in need and finding them loving, permanent families. Your support helps us cover medical expenses, food, and shelter
+                for these animals. Together, we can make a positive impact on their lives.</text>
+        </mission_section>
+        <donation_info id="donate">
+            <heading>How Your Donation Helps</heading>
+            <text>Every donation goes directly to:</text>
+            <benefits>
+                <benefit>Covering veterinary care and medical expenses</benefit>
+                <benefit>Providing food, shelter, and comfort for rescued pets</benefit>
+                <benefit>Funding adoption programs and community outreach</benefit>
+            </benefits>
+            <button_text>Donate Now</button_text>
+        </donation_info>
+    </content>
+    <footer id="contact">
+        <contact_info>
+            <email>info@happypawsfoundation.org</email>
+            <phone>0001112223</phone>
+        </contact_info>
+        <social_media>
+            <text>Stay connected with us on social media for updates and stories.</text>
+        </social_media>
+    </footer>
+</donation_website>

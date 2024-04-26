@@ -1,3 +1,4 @@
+<?php>
 $person = array("name" => "John", "age" => 30, "city" => "New York");
 
 // Accessing elements

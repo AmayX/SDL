@@ -1,3 +1,4 @@
+<?php>
 $fruits = array("Apple", "Banana", "Orange", "Mango");
 
 // Accessing elements

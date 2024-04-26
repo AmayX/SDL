@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  <xs:complexType name="headerStyleType">
+    <xs:sequence>
+      <xs:element name="body_background_color" type="xs:string"/>
+      <xs:element name="jumbotron_background_image" type="xs:string"/>
+      <xs:element name="jumbotron_text_color" type="xs:string"/>
+      <xs:element name="donate_btn_color" type="xs:string"/>
+      <xs:element name="footer_background_color" type="xs:string"/>
+      <xs:element name="footer_text_color" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="linkType">
+    <xs:sequence>
+      <xs:element name="text" type="xs:string"/>
+      <xs:element name="url" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="linksType">
+    <xs:sequence>
+      <xs:element name="link" type="linkType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="navbarType">
+    <xs:sequence>
+      <xs:element name="brand" type="xs:string"/>
+      <xs:element name="links" type="linksType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="headingTextType">
+    <xs:sequence>
+      <xs:element name="heading" type="xs:string"/>
+      <xs:element name="subheading" type="xs:string"/>
+      <xs:element name="button_text" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="benefitsType">
+    <xs:sequence>
+      <xs:element name="benefit" type="xs:string" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="donation_website">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="header" type="headerStyleType"/>
+        <xs:element name="navigation" type="navbarType"/>
+        <xs:element name="content">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="jumbotron" type="headingTextType"/>
+              <xs:element name="mission_section">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="heading" type="xs:string"/>
+                    <xs:element name="text" type="xs:string"/>
+                  </xs:sequence>
+                  <xs:attribute name="id" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="donation_info">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="heading" type="xs:string"/>
+                    <xs:element name="text" type="xs:string"/>
+                    <xs:element name="benefits" type="benefitsType"/>
+                    <xs:element name="button_text" type="xs:string"/>
+                  </xs:sequence>
+                  <xs:attribute name="id" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="footer">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="contact_info">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="email" type="xs:string"/>
+                    <xs:element name="phone" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="social_media" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
