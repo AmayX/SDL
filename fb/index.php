@@ -31,6 +31,7 @@ $result = mysqli_query($conn, $query);
         <a href="logout.php">Logout</a>
         <form action="post.php" method="post">
             <textarea name="content" placeholder="What's on your mind?"></textarea>
+            <input type="file"></input>
             <button type="submit">Post</button>
         </form>
         <div class="posts">
